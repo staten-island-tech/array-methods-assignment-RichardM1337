@@ -16,11 +16,10 @@ const titans = [
     abilities: ["Tether Trap", "VTOL Hover", "Flight Core"],
   },
 ];
-titanSearch = prompt("what titan you lookin for");
 
-titans.forEach((arr) => console.log(arr.name));
-const titanFinal = titans.filter((arr) => arr.name === titanSearch);
+function printName(array) {
+  return console.log(array.name);
+}
 
-console.log(titanFinal);
-
-// titans.forEach((arr) => console.log(arr.abilities))
+titans.forEach(() => console.log(titans.name));
+titans.abilities.forEach(printName);
