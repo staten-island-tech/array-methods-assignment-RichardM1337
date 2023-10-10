@@ -1,7 +1,7 @@
 const titans = [
   {
     name: "Ronin",
-    abilities: ["Sword Block", "Arc Field", "Phase Dash", "Sword Core"],
+    abilities: ["Sword Block", "Phase Dash", "Sword Core"],
   },
   {
     name: "Ion",
@@ -16,11 +16,16 @@ const titans = [
     abilities: ["Tether Trap", "VTOL Hover", "Flight Core"],
   },
 ];
-titanSearch = prompt("what titan you lookin for");
+
+for i in titans.abilities{
+  const titansLength=(i.length) // do fixing pls thanks
+}
+function oneLine(arr) {
+  for (var i = 0; i < titansLength; i++) {
+    console.log(arr.abilities[i] + ",");
+  }
+}
 
 titans.forEach((arr) => console.log(arr.name));
-const titanFinal = titans.filter((arr) => arr.name === titanSearch);
-
-console.log(titanFinal);
-
-// titans.forEach((arr) => console.log(arr.abilities))
+titans.forEach(oneLine);
+//titans.forEach((arr) => console.log(...arr.abilities, "\n")); (for all  things on one line)

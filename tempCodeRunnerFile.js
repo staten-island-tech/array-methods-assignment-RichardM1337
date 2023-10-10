@@ -1,7 +1,7 @@
 const titans = [
   {
     name: "Ronin",
-    abilities: ["Sword Block", "Arc Field", "Phase Dash", "Sword Core"],
+    abilities: ["Sword Block", "Phase Dash", "Sword Core"],
   },
   {
     name: "Ion",
@@ -17,9 +17,15 @@ const titans = [
   },
 ];
 
-function printName(array) {
-  return console.log(array.name);
+for i in titans.abilities{
+  const titansLength=(i.length)
+}
+function oneLine(arr) {
+  for (var i = 0; i < titansLength; i++) {
+    console.log(arr.abilities[i] + ",");
+  }
 }
 
-titans.forEach(() => console.log(titans.name));
-titans.abilities.forEach(printName);
+titans.forEach((arr) => console.log(arr.name));
+titans.forEach(oneLine);
+//titans.forEach((arr) => console.log(...arr.abilities, "\n")); (for all  things on one line)
