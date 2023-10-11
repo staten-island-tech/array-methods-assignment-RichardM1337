@@ -17,8 +17,8 @@ const titans = [
   },
 ];
 
-for i in titans.abilities{
-  const titansLength=(i.length) // do fixing pls thanks
+for (var i in titans.abilities) {
+  return (titansLength = i.length); // do fixing pls thanks
 }
 function oneLine(arr) {
   for (var i = 0; i < titansLength; i++) {
