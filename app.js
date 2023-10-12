@@ -29,6 +29,8 @@ const titanSearch = prompt("who u lookin for");
 function titanLookup(arr) {
   if (arr.name == titanSearch) {
     return console.log(arr.abilities);
+  } else if (arr.name != titanSearch) {
+    return console.log("no data");
   }
 }
 
