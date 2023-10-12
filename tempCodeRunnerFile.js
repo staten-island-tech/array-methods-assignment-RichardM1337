@@ -17,9 +17,7 @@ const titans = [
   },
 ];
 
-for (var i in titans.abilities) {
-  return (titansLength = i.length); // do fixing pls thanks
-}
+titansLength = 3; // this would be changed to check how many objects called "name" there are but i am lazy
 function oneLine(arr) {
   for (var i = 0; i < titansLength; i++) {
     console.log(arr.abilities[i] + ",");
@@ -28,4 +26,5 @@ function oneLine(arr) {
 
 titans.forEach((arr) => console.log(arr.name));
 titans.forEach(oneLine);
+titans;
 //titans.forEach((arr) => console.log(...arr.abilities, "\n")); (for all  things on one line)
