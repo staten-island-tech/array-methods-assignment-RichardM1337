@@ -17,14 +17,26 @@ const titans = [
   },
 ];
 
-titansLength = 3; // this would be changed to check how many objects called "name" there are but i am lazy
+const titansLength = 1; // this would be changed to check how many objects called "name" there are but i am lazy
 function oneLine(arr) {
   for (var i = 0; i < titansLength; i++) {
-    console.log(arr.abilities[i] + ",");
+    console.log(arr.abilities[i] + ","); //iterating through the array lets each item print one at a time
+  }
+}
+
+const titanSearch = prompt("who u lookin for");
+
+function titanLookup(arr) {
+  if (arr.name == titanSearch) {
+    return console.log(arr.abilities);
+  } else if (arr.name != titanSearch) {
+    return console.log("no data");
   }
 }
 
 titans.forEach((arr) => console.log(arr.name));
 titans.forEach(oneLine);
-titans;
-//titans.forEach((arr) => console.log(...arr.abilities, "\n")); (for all  things on one line)
+titans.filter(titanLookup);
+titans.forEach((titan) =>
+  titan.abilities.forEach((ability) => console.log(ability))
+);
