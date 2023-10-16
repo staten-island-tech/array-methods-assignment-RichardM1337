@@ -1,23 +1,23 @@
 const titans = [
   {
-    name: "Ronin",
+    name: "ronin",
     abilities: ["Sword Block", "Phase Dash", "Sword Core"],
   },
   {
-    name: "Ion",
+    name: "ion",
     abilities: ["Vortex Shield", "Tripwire", "Laser Core"],
   },
   {
-    name: "Scorch",
+    name: "scorch",
     abilities: ["Thermal Shield", "Incendiary Trap", "Flame Core"],
   },
   {
-    name: "Northstar",
+    name: "northstar",
     abilities: ["Tether Trap", "VTOL Hover", "Flight Core"],
   },
 ];
 
-const titanSearch = prompt("who u lookin for");
+const titanSearch = prompt("who u lookin for").toLowerCase();
 
 function titanLookup(arr) {
   if (arr.name == titanSearch) {
